@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zc_dodiddone2/pages/main_page.dart';
 
 import '../theme/theme.dart';
 
@@ -96,7 +97,10 @@ class _LoginPageState extends State<LoginPage> {
               // Login Button
               ElevatedButton(
                 onPressed: () {
-                  // Handle login/registration logic here
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => MainPage()));
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
